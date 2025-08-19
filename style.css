@@ -1,0 +1,248 @@
+/* Button Styles */
+.btn {
+	font-family: "Arial", sans-serif;
+	display: inline-block;
+	text-align: center;
+	padding: 15px 20px; /* Reduced from 30px 30px */
+	border-radius: 15px;
+	text-decoration: none;
+	cursor: pointer;
+	background-color: rgba(9, 128, 76, 0.699);
+	color: rgb(255, 255, 255);
+	font-size: 18px; /* Reduced from 20px */
+	transition: all 150ms ease-in-out 0s;
+	white-space: nowrap;
+}
+
+.btn:hover {
+	color: rgb(255, 255, 255);
+	background-color: rgb(17, 97, 73);
+	box-shadow: rgb(195 231 202) 0px 0px 0px 2px;
+}
+
+/* Body Styles */
+body {
+	margin: 0px;
+	background-color: rgb(80, 80, 80);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Title Icon */
+.title-icon {
+	width: 80px; /* Reduced from 100px */
+	height: 80px; /* Reduced from 100px */
+	padding-left: 1%;
+	flex-shrink: 0;
+}
+
+/* Title */
+.title {
+	margin-left: 10px; /* Reduced from 20px */
+	font-family: 'Trebuchet MS';
+	color: rgb(200, 200, 200);
+	font-size: 24px; /* Reduced from 30px */
+	text-shadow: 0 0 3px rgb(20, 20, 20), 0 0 5px rgb(20, 20, 100);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	flex-shrink: 0;
+}
+
+/* Header */
+.header {
+	background-color: rgb(46, 46, 46);
+	box-shadow: 0px 5px 10px rgb(60, 60, 60);
+	display: flex;
+	flex-direction: row;
+	justify-content: center; /* Center everything */
+	align-items: center;
+	padding: 1%;
+	gap: 15px;
+	flex-wrap: wrap;
+	width: 100%;
+	box-sizing: border-box;
+	position: relative; /* For absolute positioning of logo/title */
+}
+
+/* Logo and title container - positioned absolutely to left */
+.logo-title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	position: absolute;
+	left: 1%;
+}
+
+/* Navigation Container */
+.nav-links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+/* Navigation Container */
+.nav-links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin: auto; /* Push nav to the right */
+}
+
+/* Dropdown Styles */
+.dropdown-content {
+	position: absolute;
+	top: 25px;
+	z-index: 1;
+	animation: fadein 0.2s;
+	border: 3px solid rgb(80, 80, 80);
+	background-color: rgb(120, 120, 120);
+	display: none;
+}
+
+.dropdown-content a {
+	display: block;
+	text-decoration: none;
+	color: rgb(20, 20, 20);
+	padding: 10px 20px;
+}
+
+.dropdown-content a:hover {
+	background-color: rgb(80, 80, 80);
+}
+
+.button:hover .dropdown-content {
+	display: block;
+}
+
+/* Page Content */
+.page {
+	display: flex;
+	justify-content: center;
+	flex: 1;
+	padding: 0 10px; /* Add horizontal padding */
+	box-sizing: border-box;
+}
+
+.page .content {
+	font-family: 'Trebuchet MS';
+	color: rgb(200, 200, 200);
+	margin: 20px;
+	margin-bottom: 100px;
+	padding: 15px 30px 20px 30px;
+	border-radius: 10px;
+	width: 100%;
+	max-width: 800px; /* Use max-width instead of fixed width */
+	background-color: rgb(46, 46, 46);
+	box-shadow: 0 0 10px rgb(60, 60, 60);
+	box-sizing: border-box;
+}
+
+/* Hover Effects */
+.hvr-float {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
+	-webkit-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.hvr-grow-rotate {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+
+.hvr-grow-rotate:hover, 
+.hvr-grow-rotate:focus, 
+.hvr-grow-rotate:active {
+	-webkit-transform: scale(1.3) rotate(6deg);
+	transform: scale(1.3) rotate(6deg);
+}
+
+/* Footer */
+.footer {
+	font-family: 'Trebuchet MS';
+	color: rgb(200, 200, 200);
+	background-color: rgb(46, 46, 46);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 50px; /* Reduced from 100px */
+	padding: 0px 0px;
+	margin-top: auto;
+	width: 100%;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+}
+
+/* Mobile Responsive Breakpoints */
+/* Tablet and small desktop */
+@media screen and (max-width: 768px) {
+	.header {
+		flex-direction: column;
+		gap: 15px;
+		padding: 15px;
+		text-align: center;
+		justify-content: flex-start; /* Reset justify-content */
+	}
+	
+	.logo-title {
+		position: static; /* Reset absolute positioning */
+		justify-content: center;
+	}
+	
+	.title-icon {
+		width: 70px;
+		height: 70px;
+		padding-left: 0;
+	}
+	
+	.title {
+		font-size: 22px;
+		margin-left: 0;
+	}
+	
+	.nav-links {
+		margin-left: 0;
+		justify-content: center;
+	}
+	
+	.btn {
+		padding: 12px 18px;
+		font-size: 16px;
+	}
+	
+	.page .content {
+		margin: 10px;
+		padding: 15px 20px;
+	}
+	
+	.footer {
+		gap: 30px;
+		padding: 15px 10px;
+		text-align: center;
+	}
+}
+
