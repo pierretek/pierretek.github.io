@@ -3,13 +3,12 @@
 	font-family: "Arial", sans-serif;
 	display: inline-block;
 	text-align: center;
-	padding: 15px 20px; /* Reduced from 30px 30px */
+	padding: 15px 20px;
 	border-radius: 15px;
 	text-decoration: none;
-	cursor: pointer;
 	background-color: rgba(9, 128, 76, 0.699);
 	color: rgb(255, 255, 255);
-	font-size: 18px; /* Reduced from 20px */
+	font-size: 18px;
 	transition: all 150ms ease-in-out 0s;
 	white-space: nowrap;
 }
@@ -27,22 +26,22 @@ body {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-	overflow-x: hidden; /* Prevent horizontal scroll */
+	overflow-x: hidden;
 }
 
 /* Title Icon */
 .title-icon {
-	height: 75px; /* Reduced from 100px */
+	height: 80px;
 	padding-left: 1%;
 	flex-shrink: 0;
 }
 
 /* Title */
 .title {
-	margin-left: 10px; /* Reduced from 20px */
+	margin-left: 30px;
 	font-family: 'Trebuchet MS';
 	color: rgb(200, 200, 200);
-	font-size: 24px; /* Reduced from 30px */
+	font-size: 30px;
 	text-shadow: 0 0 3px rgb(20, 20, 20), 0 0 5px rgb(20, 20, 100);
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -55,21 +54,20 @@ body {
 	box-shadow: 0px 5px 10px rgb(60, 60, 60);
 	display: flex;
 	flex-direction: row;
-	justify-content: center; /* Center everything */
 	align-items: center;
 	padding: 1%;
-	gap: 15px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	flex-wrap: wrap;
 	width: 100%;
 	box-sizing: border-box;
-	position: relative; /* For absolute positioning of logo/title */
+	position: relative;
 }
 
 /* Logo and title container - positioned absolutely to left */
 .logo-title {
 	display: flex;
 	align-items: center;
-	gap: 10px;
 	position: absolute;
 	left: 1%;
 }
@@ -86,7 +84,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 10px;
-	margin: auto; /* Push nav to the right */
+	margin: auto;
 }
 
 /* Dropdown Styles */
@@ -120,7 +118,7 @@ body {
 	display: flex;
 	justify-content: center;
 	flex: 1;
-	padding: 0 10px; /* Add horizontal padding */
+	padding: 0 10px;
 	box-sizing: border-box;
 }
 
@@ -132,7 +130,7 @@ body {
 	padding: 15px 30px 20px 30px;
 	border-radius: 10px;
 	width: 100%;
-	max-width: 800px; /* Use max-width instead of fixed width */
+	max-width: 800px;
 	background-color: rgb(46, 46, 46);
 	box-shadow: 0 0 10px rgb(60, 60, 60);
 	box-sizing: border-box;
@@ -147,7 +145,7 @@ body {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	gap: 50px; /* Reduced from 100px */
+	gap: 50px;
 	padding: 0px 0px;
 	margin-top: auto;
 	width: 100%;
@@ -157,50 +155,52 @@ body {
 
 /* Mobile Responsive Breakpoints */
 /* Tablet and small desktop */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1300px) {
 	.header {
 		flex-direction: column;
 		gap: 15px;
 		padding: 15px;
 		text-align: center;
-		justify-content: flex-start; /* Reset justify-content */
+		justify-content: flex-start;
 	}
-	
+
 	.logo-title {
-		position: static; /* Reset absolute positioning */
+		position: static;
 		justify-content: center;
 	}
-	
+
 	.title-icon {
-		width: 70px;
-		height: 70px;
+		height: 75px;
 		padding-left: 0;
 	}
-	
+
 	.title {
-		font-size: 22px;
-		margin-left: 0;
+		text-align: left;
+		font-size: 30px;
+		margin-left: 20px;
 	}
-	
+
 	.nav-links {
 		margin-left: 0;
 		justify-content: center;
+		width: 100%;  
+		flex-wrap: wrap;     
+		display:flex;
 	}
-	
+
 	.btn {
 		padding: 12px 18px;
 		font-size: 16px;
 	}
-	
+
 	.page .content {
 		margin: 10px;
 		padding: 15px 20px;
 	}
-	
+
 	.footer {
-		gap: 30px;
-		padding: 15px 10px;
+		gap: 50px;
+		padding: 0px 0px;
 		text-align: center;
 	}
 }
-
