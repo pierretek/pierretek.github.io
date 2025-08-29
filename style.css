@@ -29,11 +29,16 @@
 	box-shadow: rgb(255, 255, 255) 0px 0px 0px 3px;
 }
 
+/* Bold Text */
+strong {
+	font-weight: 2px;
+	color: #ffffff;
+}
 
 /* Body Styles */
 body {
 	margin: 0px;
-	background-color: rgb(80, 80, 80);
+	background-color: rgb(66, 69, 73);
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -53,7 +58,7 @@ body {
 	font-family: 'Trebuchet MS';
 	color: rgb(200, 200, 200);
 	font-size: 30px;
-	text-shadow: 0 0 3px rgb(20, 20, 20), 0 0 5px rgb(20, 20, 100);
+	text-shadow: 0 1px 5px rgb(20, 20, 20);
 	margin-top: 10px;
 	margin-bottom: 10px;
 	flex-shrink: 0;
@@ -61,8 +66,7 @@ body {
 
 /* Header */
 .header {
-	background-color: rgb(46, 46, 46);
-	box-shadow: 0px 5px 10px rgb(60, 60, 60);
+	background-color: rgb(40, 43, 48);
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -97,8 +101,9 @@ body {
 	margin: auto;
 }
 
-/* Dropdown Styles */
-.dropdown-content {
+/* Dropdown Styles 
+.dropdown-
+content {
 	position: absolute;
 	top: 25px;
 	z-index: 1;
@@ -121,12 +126,13 @@ body {
 .button:hover .dropdown-content {
 	display: block;
 }
+*/
 
 /* Page Content */
 .page {
 	display: flex;
 	justify-content: center;
-	flex: 1;
+	flex: 0;
 	padding: 0 10px;
 	box-sizing: border-box;
 }
@@ -135,12 +141,11 @@ body {
 	font-family: 'Trebuchet MS';
 	color: rgb(200, 200, 200);
 	margin: 20px;
-	margin-bottom: 100px;
 	padding: 15px 30px 20px 30px;
 	border-radius: 10px;
 	width: 100%;
 	max-width: 800px;
-	background-color: rgb(46, 46, 46);
+	background-color: rgb(40, 43, 48);
 	box-shadow: 0 0 10px rgb(60, 60, 60);
 	box-sizing: border-box;
 }
@@ -149,7 +154,7 @@ body {
 .footer {
 	font-family: 'Trebuchet MS';
 	color: rgb(200, 200, 200);
-	background-color: rgb(46, 46, 46);
+	background-color: rgb(40, 43, 48);
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
