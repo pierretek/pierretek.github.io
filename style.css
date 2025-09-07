@@ -70,9 +70,9 @@ body {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	padding: 1%;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	margin-bottom: 20px;
 	flex-wrap: nowrap;
 	width: 100%;
 	box-sizing: border-box;
@@ -140,7 +140,7 @@ content {
 .page .content {
 	font-family: 'Trebuchet MS';
 	color: rgb(200, 200, 200);
-	margin: 20px;
+	margin-bottom: 20px;
 	padding: 15px 30px 20px 30px;
 	border-radius: 10px;
 	width: 100%;
@@ -148,6 +148,7 @@ content {
 	background-color: rgb(40, 43, 48);
 	box-shadow: 0 0 10px rgb(60, 60, 60);
 	box-sizing: border-box;
+	overflow:hidden;
 }
 
 /* Footer */
@@ -277,7 +278,7 @@ content {
 	}
 
 	.footer {
-		gap: 20px;
+		row-gap: 20px;
 		padding: 0px 0px;
 		text-align: center;
 	}
