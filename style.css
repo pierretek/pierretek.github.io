@@ -25,7 +25,8 @@
 	text-shadow: -1px 1px 3px rgb(0, 0, 0);
 }
 
-.btn:hover {
+.btn:hover,
+.subcontent-button:hover {
 	box-shadow: rgb(255, 255, 255) 0px 0px 0px 3px;
 }
 
@@ -148,7 +149,47 @@ content {
 	background-color: rgb(40, 43, 48);
 	box-shadow: 0 0 10px rgb(60, 60, 60);
 	box-sizing: border-box;
-	overflow:hidden;
+	overflow: hidden;
+}
+
+.subcontent {
+	font-family: 'Trebuchet MS';
+	color: rgb(200, 200, 200);
+	margin-bottom: 20px;
+	padding: 15px 30px 20px 30px;
+	border-radius: 10px;
+	width: 100%;
+	max-width: 800px;
+	background-color: rgb(29, 31, 35);
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.subcontent-button {
+	font-family: "Arial", sans-serif;
+	text-align: center;
+	display: inline-block;
+	font-weight: 600;
+	padding: 15px 20px;
+	margin: 10px 10px 10px 0px;
+	border-radius: 15px;
+	text-decoration: none;
+	background: radial-gradient(ellipse farthest-corner at top right,
+			rgba(0, 212, 7, 1) 8.25%,
+			rgba(0, 208, 37, 1) 13.47%,
+			rgba(0, 199, 109, 1) 26.9%,
+			rgba(0, 192, 166, 1) 38.98%,
+			rgba(0, 187, 207, 1) 49.26%,
+			rgba(0, 184, 232, 1) 57.34%,
+			rgba(0, 183, 241, 1) 62.22%,
+			rgba(0, 131, 214, 1) 74.99%,
+			rgba(0, 68, 182, 1) 91.44%,
+			rgba(0, 44, 170, 1) 99.25%);
+	color: rgb(255, 255, 255);
+	font-size: 18px;
+	transition: box-shadow 150ms ease-in-out 0s;
+	white-space: nowrap;
+	text-shadow: -1px 1px 3px rgb(0, 0, 0);
 }
 
 /* Footer */
