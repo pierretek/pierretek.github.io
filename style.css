@@ -38,12 +38,17 @@ strong {
 
 /* Body Styles */
 body {
+	scrollbar-width: none;
 	margin: 0px;
 	background-color: rgb(66, 69, 73);
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	overflow-x: hidden;
+}
+
+html {
+	scrollbar-width: none;
 }
 
 /* Title Icon */
