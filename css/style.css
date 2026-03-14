@@ -189,16 +189,42 @@ h2 {
 
 /* project thumbnail */
 .gallery img {
-
-	transition: transform 0.2s;
+	display: block;
 	width: 30vw;
 	border-radius: 10px;
 	box-shadow: rgb(150, 150, 150) 0px 0px 0px 3px;
-
+	transition: transform 0.2s;
 }
 
-.gallery img:hover {
+.gallery a {
+	position: relative;
+	display: block;
+}
+
+/* Hover overlay */
+.gallery a::after {
+	content: 'Click to expand gallery';
+	position: absolute;
+	inset: 0;
+	border-radius: 10px;
+	color: white;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.3s ease;
+}
+
+.gallery a:hover img,
+.gallery a:hover::after {
 	transform: scale(1.05);
+}
+
+.gallery a:hover::after {
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 1;
 }
 
 
@@ -297,6 +323,10 @@ h2 {
 		margin: 5px 2px 5px 2px;
 		font-size: 12px;
 		padding: 12px;
+	}
+
+	.subcontent {
+		padding: 10px;
 	}
 
 	.logo-title {
