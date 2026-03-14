@@ -248,15 +248,15 @@ h2 {
 	}
 
 	.subcontent-button {
-		font-size: 12px;
-		padding: 10px;
+		font-size: 15px;
+		padding: 15px;
 		margin: 10px 5px 10px 5px;
 	}
 
 
 	.page .content {
-		margin: 10px;
-		padding: 15px 20px;
+		font-size: 18px;
+		padding: 15px 15px;
 		text-align: center;
 	}
 
@@ -295,6 +295,8 @@ h2 {
 
 	.subcontent-button {
 		margin: 5px 2px 5px 2px;
+		font-size: 12px;
+		padding: 12px;
 	}
 
 	.logo-title {
@@ -333,10 +335,10 @@ h2 {
 	}
 
 	.page .content {
-		margin: 10px;
-		padding: 15px 20px;
 		font-size: 15px;
+		width: 90%;
 	}
+
 
 	.footer {
 		padding: 10px 0px;
