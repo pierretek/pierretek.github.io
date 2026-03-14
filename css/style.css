@@ -223,7 +223,7 @@ h2 {
 }
 
 .gallery a:hover::after {
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.6);
 	opacity: 1;
 }
 
@@ -279,6 +279,10 @@ h2 {
 		margin: 10px 5px 10px 5px;
 	}
 
+	/* Hover overlay */
+	.gallery a::after {
+		content: 'Tap to expand gallery';
+	}
 
 	.page .content {
 		font-size: 18px;
