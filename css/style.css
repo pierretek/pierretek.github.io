@@ -111,8 +111,7 @@ strong {
 /* BUTTONS  ----------------------------------------------------------------- */
 
 /* Button Styles */
-.btn,
-.subcontent-button {
+.btn {
 	font-family: "Arial", sans-serif;
 	text-align: center;
 	font-weight: 600;
@@ -120,16 +119,9 @@ strong {
 	border-radius: 15px;
 	text-decoration: none;
 	background: radial-gradient(ellipse farthest-corner at top right,
-			rgba(0, 212, 7, 1) 8.25%,
-			rgba(0, 208, 37, 1) 13.47%,
-			rgba(0, 199, 109, 1) 26.9%,
-			rgba(0, 192, 166, 1) 38.98%,
-			rgba(0, 187, 207, 1) 49.26%,
-			rgba(0, 184, 232, 1) 57.34%,
-			rgba(0, 183, 241, 1) 62.22%,
-			rgba(0, 131, 214, 1) 74.99%,
-			rgba(0, 68, 182, 1) 91.44%,
-			rgba(0, 44, 170, 1) 99.25%);
+			rgba(0, 212, 7, 1) 10%,
+			rgba(0, 183, 241, 1) 60%,
+			rgba(0, 44, 170, 1));
 	color: rgb(255, 255, 255);
 	font-size: 22px;
 	white-space: nowrap;
@@ -137,20 +129,20 @@ strong {
 	transition: outline 150ms ease-in-out 0s;
 }
 
-.btn:hover,
-.subcontent-button:hover {
+.btn:hover {
 	outline: 3px solid rgb(255, 255, 255);
-}
-
-.subcontent-button {
-	display: inline-block;
-	padding: 15px 20px;
-	margin: 10px 10px 10px 0px;
-	font-size: 18px;
 }
 
 #repository {
 	background: rgb(9, 82, 114);
+}
+
+/* Subcontent button */
+.sc-btn {
+	display: inline-block;
+	padding: 15px 20px;
+	margin: 10px 10px 10px 0px;
+	font-size: 18px;
 }
 
 /* PROJECT DISPLAYS  ----------------------------------------------------------------- */
@@ -273,7 +265,7 @@ h2 {
 		text-align: center;
 	}
 
-	.subcontent-button {
+	.sc-btn{
 		font-size: 15px;
 		padding: 15px;
 		margin: 10px 5px 10px 5px;
@@ -323,7 +315,7 @@ h2 {
 		justify-content: flex-start;
 	}
 
-	.subcontent-button {
+	.sc-btn {
 		margin: 5px 2px 5px 2px;
 		font-size: 12px;
 		padding: 12px;
