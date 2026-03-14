@@ -1,0 +1,350 @@
+/* GENERAL PAGE STUFF ------------------------------------------------------------------- */
+html {
+	scrollbar-width: none;
+}
+
+/* Body Styles */
+body {
+	margin: 0px;
+	background-color: rgb(66, 69, 73);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+
+/* Bold Text */
+strong {
+	font-weight: 2px;
+	color: #ffffff;
+}
+
+/* Page Content */
+.page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 0;
+	padding: 0 10px;
+	font-family: 'Trebuchet MS';
+	font-size: 20px;
+	color: rgb(220, 220, 220);
+}
+
+.content {
+
+	margin-bottom: 20px;
+	padding: 15px 30px 20px 30px;
+	border-radius: 10px;
+	width: 70%;
+	background-color: rgb(40, 43, 48);
+	box-shadow: 0 0 10px rgb(60, 60, 60);
+	overflow: hidden;
+}
+
+/* HEADER AND FOOTER ----------------------------------------------------------------- */
+/* Title and Icon */
+.title-icon {
+	height: 80px;
+	flex-shrink: 0;
+}
+
+/* Title */
+.title {
+	/* margin-left: 30px; */
+	font-family: 'Trebuchet MS';
+	color: rgb(255, 255, 255);
+	font-size: 35px;
+	text-shadow: 0 1px 5px rgb(20, 20, 20);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	flex-shrink: 0;
+}
+
+/* Header */
+.header {
+	background-color: rgb(40, 43, 48);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px;
+	margin-bottom: 50px;
+	flex-wrap: nowrap;
+	width: 100vw;
+	box-sizing: border-box;
+}
+
+/* Navigation Container */
+.nav-links {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1;
+	justify-content: center;
+	column-gap: 25px;
+}
+
+/* Logo and title container*/
+.logo-title {
+	display: flex;
+	align-items: center;
+	column-gap: 2vw;
+}
+
+/* Footer */
+.footer {
+	font-family: 'Trebuchet MS';
+	color: rgb(200, 200, 200);
+	background-color: rgb(40, 43, 48);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	padding: 0px 0px;
+	margin-top: auto;
+	width: 100vw;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+}
+
+/* BUTTONS  ----------------------------------------------------------------- */
+
+/* Button Styles */
+.btn,
+.subcontent-button {
+	font-family: "Arial", sans-serif;
+	text-align: center;
+	font-weight: 600;
+	padding: 18px 30px;
+	border-radius: 15px;
+	text-decoration: none;
+	background: radial-gradient(ellipse farthest-corner at top right,
+			rgba(0, 212, 7, 1) 8.25%,
+			rgba(0, 208, 37, 1) 13.47%,
+			rgba(0, 199, 109, 1) 26.9%,
+			rgba(0, 192, 166, 1) 38.98%,
+			rgba(0, 187, 207, 1) 49.26%,
+			rgba(0, 184, 232, 1) 57.34%,
+			rgba(0, 183, 241, 1) 62.22%,
+			rgba(0, 131, 214, 1) 74.99%,
+			rgba(0, 68, 182, 1) 91.44%,
+			rgba(0, 44, 170, 1) 99.25%);
+	color: rgb(255, 255, 255);
+	font-size: 22px;
+	white-space: nowrap;
+	text-shadow: -1px 1px 3px rgb(0, 0, 0);
+	transition: outline 150ms ease-in-out 0s;
+}
+
+.btn:hover,
+.subcontent-button:hover {
+	outline: 3px solid rgb(255, 255, 255);
+}
+
+.subcontent-button {
+	display: inline-block;
+	padding: 15px 20px;
+	margin: 10px 10px 10px 0px;
+	font-size: 18px;
+}
+
+#repository {
+	background: rgb(9, 82, 114);
+}
+
+/* PROJECT DISPLAYS  ----------------------------------------------------------------- */
+
+.subcontent {
+	display: flex;
+	flex-direction: row;
+
+	font-family: 'Trebuchet MS';
+	color: rgb(200, 200, 200);
+
+	margin-bottom: 20px;
+	padding: 20px;
+
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgb(29, 31, 35);
+	box-sizing: border-box;
+	overflow: hidden;
+
+	column-gap: 20px;
+
+	align-items: center;
+}
+
+
+#project-logo {
+	width: 40px;
+	vertical-align: middle;
+	margin-left: 1%;
+}
+
+h2 {
+	white-space: nowrap;
+}
+
+/* project thumbnail */
+.gallery img {
+
+	transition: transform 0.2s;
+	width: 30vw;
+	border-radius: 10px;
+	box-shadow: rgb(150, 150, 150) 0px 0px 0px 3px;
+
+}
+
+.gallery img:hover {
+	transform: scale(1.05);
+}
+
+
+/* TABLET AND SMALL DESKTOPS  ------------------------------------------------------------------- */
+
+@media screen and (max-width: 1180px) {
+	.header {
+		flex-direction: column;
+		gap: 15px;
+		padding: 15px;
+		text-align: center;
+		justify-content: flex-start;
+	}
+
+	.logo-title {
+		position: static;
+		justify-content: center;
+	}
+
+	.title-icon {
+		height: 75px;
+		column-gap: 5vw;
+	}
+
+	.title {
+		text-align: left;
+		font-size: 35px;
+	}
+
+	.nav-links {
+		justify-content: center;
+		width: 100%;
+		display: flex;
+		flex-wrap: nowrap;
+		gap: 10px;
+	}
+
+	.btn {
+		padding: 12px 18px;
+		font-size: 16px;
+	}
+
+	.nav-links .btn {
+		flex: 1 1 auto;
+		min-width: 0;
+		text-align: center;
+	}
+
+	.subcontent-button {
+		font-size: 12px;
+		padding: 10px;
+		margin: 10px 5px 10px 5px;
+	}
+
+
+	.page .content {
+		margin: 10px;
+		padding: 15px 20px;
+		text-align: center;
+	}
+
+	.footer {
+		gap: 20px;
+		padding: 0px 0px;
+		text-align: center;
+		font-size: 15px;
+	}
+
+	h2 {
+		white-space: wrap;
+	}
+
+	.subcontent {
+		flex-direction: column;
+		text-align: center;
+		gap: 10px;
+	}
+
+	.gallery img {
+		height: 35vw;
+		width: 100%;
+	}
+}
+
+/* MOBILE OPTIONS ------------------------------------------------------------------- */
+@media screen and (max-width: 430px) {
+	.header {
+		flex-direction: column;
+		gap: 15px;
+		padding: 15px;
+		text-align: center;
+		justify-content: flex-start;
+	}
+
+	.subcontent-button {
+		margin: 5px 2px 5px 2px;
+	}
+
+	.logo-title {
+		position: static;
+		justify-content: center;
+		margin: 0 20px 0 20px;
+	}
+
+	.title-icon {
+		height: auto;
+		width: clamp(45px, 40vw, 300px);
+
+	}
+
+	.title {
+		text-align: left;
+		font-size: clamp(15px, 8vw, 35px);
+	}
+
+	.nav-links {
+		justify-content: center;
+		width: 100%;
+		flex-wrap: wrap;
+		display: flex;
+		gap: 10px;
+	}
+
+	.btn {
+		padding: 12px 18px;
+		font-size: 16px;
+	}
+
+	.nav-links .btn {
+		flex: 0 0 30%;
+		text-align: center;
+	}
+
+	.page .content {
+		margin: 10px;
+		padding: 15px 20px;
+		font-size: 15px;
+	}
+
+	.footer {
+		padding: 10px 0px;
+		text-align: center;
+	}
+
+	.footer p {
+		margin: -5px -5px;
+	}
+
+}
