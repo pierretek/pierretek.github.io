@@ -126,7 +126,6 @@ strong {
 	font-size: 22px;
 	white-space: nowrap;
 	text-shadow: -1px 1px 3px rgb(0, 0, 0);
-	transition: outline 150ms ease-in-out 0s;
 }
 
 .btn:hover {
@@ -188,11 +187,6 @@ h2 {
 	transition: transform 0.2s;
 }
 
-.gallery a {
-	position: relative;
-	display: block;
-}
-
 /* Hover overlay */
 .gallery a::after {
 	content: 'Click to expand gallery';
@@ -206,16 +200,12 @@ h2 {
 	justify-content: center;
 	opacity: 0;
 	pointer-events: none;
-	transition: opacity 0.3s ease;
+	transition: opacity 0.5s ease;
 }
 
-.gallery a:hover img,
-.gallery a:hover::after {
-	transform: scale(1.05);
-}
 
 .gallery a:hover::after {
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.5);
 	opacity: 1;
 }
 
