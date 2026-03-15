@@ -259,16 +259,15 @@ h2 {
 		font-size: 16px;
 	}
 
+	.sc-btn {
+		padding: 12px;
+		margin: 10px 5px 10px 5px;
+	}
+
 	.nav-links .btn {
 		flex: 1 1 auto;
 		min-width: 0;
 		text-align: center;
-	}
-
-	.sc-btn{
-		font-size: 15px;
-		padding: 15px;
-		margin: 10px 5px 10px 5px;
 	}
 
 	/* Hover overlay */
@@ -315,11 +314,7 @@ h2 {
 		justify-content: flex-start;
 	}
 
-	.sc-btn {
-		margin: 5px 2px 5px 2px;
-		font-size: 12px;
-		padding: 12px;
-	}
+
 
 	.subcontent {
 		padding: 10px;
@@ -353,6 +348,12 @@ h2 {
 	.btn {
 		padding: 12px 18px;
 		font-size: 16px;
+	}
+
+	.sc-btn {
+		margin: 5px 2px 5px 2px;
+		font-size: 14px;
+		padding: 10px;
 	}
 
 	.nav-links .btn {
