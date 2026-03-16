@@ -5,6 +5,6 @@ document.getElementById("funny-demo").addEventListener("click", function () {
 	this.textContent = "You're already here dummy";
 
 	setTimeout(() => {
-		this.textContent = original; 
+		this.textContent = original;
 	}, 5000);
 });
