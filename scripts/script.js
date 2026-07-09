@@ -15,6 +15,27 @@ if (funnyDemoBtn) {
 let lastScrollTop = 0;
 const header = document.querySelector('.header');
 const threshold = 50; // minimum scroll amount before hiding/showing
+const AUTO_HIDE_DELAY = 3000;
+const TOP_ZONE = 100; 
+let hideTimer = null;
+
+function isAtTop() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    return scrollTop <= TOP_ZONE;
+}
+
+function scheduleAutoHide() {
+    if (hideTimer) clearTimeout(hideTimer);
+    if (isAtTop()) {
+        header.classList.remove('header-hidden'); // never hide at the top
+        return;
+    }
+    hideTimer = setTimeout(() => {
+        if (!isAtTop()) {
+            header.classList.add('header-hidden');
+        }
+    }, AUTO_HIDE_DELAY);
+}
 
 if (header) {
     window.addEventListener('scroll', function () {
@@ -25,14 +46,18 @@ if (header) {
         }
 
         if (scrollTop > lastScrollTop && scrollTop > 100) {
-            // Scrolling down
+            // Scrolling down -> hide, do NOT re-arm timer
             header.classList.add('header-hidden');
-        } else {
-            // Scrolling up
+        } else if (scrollTop < lastScrollTop) {
+            // Scrolling up -> reveal and re-arm the 5s timer
             header.classList.remove('header-hidden');
+            scheduleAutoHide();
         }
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     }, false);
+
+    // initial idle auto-hide countdown
+    scheduleAutoHide();
 }
 
 //table of contents thing
