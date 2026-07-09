@@ -1,7 +1,5 @@
 # Official PierreTek Website
-This site is home to all my repositories, projects and personal information
-
-Feel free to have a look around my scuffed website
+This site is home to all my repositories, projects and contact information
 
 This site is continually being worked on and is still **under construction**
 
